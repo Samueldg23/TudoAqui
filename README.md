@@ -98,10 +98,3 @@ O **Tudo Aqui** é um marketplace de serviços autônomos que conecta clientes a
 - Gerencie seus serviços e agenda de forma eficiente.
 - Receba pagamentos de forma segura e rápida.
 
-
-Se você deseja contribuir para o projeto, siga os passos abaixo:
-
-1. Faça um **fork** do repositório.
-2. Crie uma nova branch com a sua feature ou correção:
-   ```bash
-   git checkout -b minha-feature
