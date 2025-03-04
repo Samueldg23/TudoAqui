@@ -1,0 +1,47 @@
+name: tudo_aqui
+description: "A new Flutter project."
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+  flutter_native_splash: ^2.4.5  
+  flutter_launcher_icons: ^0.14.3 
+
+flutter_native_splash: 
+  color: "#24363a" 
+  image: assets/images/TudoAquiLogo.jpeg
+  android: true
+  ios: true
+  web: true
+  fullscreen: true
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/TudoAquiLogo-removebg-preview.png"
+  adaptive_icon_background: "#24363a"  
+  adaptive_icon_foreground: "assets/images/TudoAquiLogo-removebg-preview.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/TudoAquiLogo.jpeg
+    - assets/images/TudoAquiLogo-removebg-preview.png
+    - assets/images/TudoAquiAzul.jpeg
+    - assets/images/TudoAquiAzul-removebg-preview.png
+    - assets/images/TudoAquiP&B.jpeg
+

@@ -1,0 +1,2 @@
+C:/Faculdade/P-2025-1/tudo_aqui/android/app/.cxx/Debug/2c6h3x3m/x86/CMakeFiles/edit_cache.dir
+C:/Faculdade/P-2025-1/tudo_aqui/android/app/.cxx/Debug/2c6h3x3m/x86/CMakeFiles/rebuild_cache.dir
