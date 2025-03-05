@@ -5,6 +5,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import br.com.unisales.tudoaqui.dto.AvaliacaoCadastroDTO;
+import br.com.unisales.tudoaqui.dto.AvaliacaoDTO;
+import br.com.unisales.tudoaqui.service.AvaliacaoService;
+
 import java.util.List;
 
 @RestController

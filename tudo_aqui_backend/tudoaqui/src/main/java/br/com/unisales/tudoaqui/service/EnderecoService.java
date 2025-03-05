@@ -26,7 +26,16 @@ public class EnderecoService {
         endereco.setCep(enderecoCadastroDTO.getCep());
 
         endereco = repo.save(endereco);
-        return converterParaDTO(endereco); 
+        return converterParaDTO(endereco);
+    }
+
+    public EnderecoDTO buscarEnderecoPorId(Long id) { 
+        Optional<Endereco> enderecoOptional = repo.findById(id);
+        if (enderecoOptional.isPresent()) {
+            return converterParaDTO(enderecoOptional.get());
+        } else {
+            throw new RuntimeException("Endereço não encontrado");
+        }
     }
 
     public EnderecoDTO atualizarEndereco(Long id, EnderecoCadastroDTO enderecoCadastroDTO) {
@@ -41,7 +50,7 @@ public class EnderecoService {
             endereco.setCep(enderecoCadastroDTO.getCep());
 
             endereco = repo.save(endereco);
-            return converterParaDTO(endereco); 
+            return converterParaDTO(endereco);
         } else {
             throw new RuntimeException("Endereço não encontrado");
         }
@@ -57,13 +66,12 @@ public class EnderecoService {
 
     private EnderecoDTO converterParaDTO(Endereco endereco) {
         return new EnderecoDTO(
-            endereco.getId(),
-            endereco.getRua(),
-            endereco.getNumero(),
-            endereco.getBairro(),
-            endereco.getCidade(),
-            endereco.getEstado(),
-            endereco.getCep()
-        );
+                endereco.getId(),
+                endereco.getRua(),
+                endereco.getNumero(),
+                endereco.getBairro(),
+                endereco.getCidade(),
+                endereco.getEstado(),
+                endereco.getCep());
     }
 }
